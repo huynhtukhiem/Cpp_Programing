@@ -17,6 +17,7 @@ int main(){
     sv1 là tên biến có kiểu dữ liệu là Sinh_vien
     Ví dụ mảng chứa các phần tử chung một kiểu dữ liệu: a[] = {1,2,3}; 1 2 3 đều là số nguyên
     Còn sv1 = {int, float, string, char}; các kiểu dữ liệu khác nhau
+    Nói đơn giản: Sinh_vien lúc này như là một mảng nhưng các phần tử của nó các kiểu dữ liệu do bạn định nghĩa chứ không phải số nguyên nữa
 */ 
 
     // Truy cập vào phần tử trong struct
