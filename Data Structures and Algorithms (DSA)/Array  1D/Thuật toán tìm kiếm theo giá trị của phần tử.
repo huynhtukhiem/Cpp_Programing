@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+// Hàm nhập mảng
+void Nhapmang(int n, int a[]){
+    for (int i = 0; i < n; i++){
+        cout << "Nhap phan tu thu " << i + 1 << ": ";
+        cin >> a[i];
+    }
+}
+
+// Hàm in mảng
+void Inmang(int n, int a[]){
+    cout << "Mang: ";
+    for (int i = 0; i < n; i++){
+        cout << a[i] << " ";
+    }
+    cout << endl;
+}
+
+// Hàm tìm kiếm theo giá trị trong mảng
+void Timkiem(int n, int a[], int value){
+    int found = 0; // cờ đánh dấu số phần tử tìm được
+    for (int i = 0; i < n; i++){
+        if (a[i] == value){
+            cout << "Gia tri " << value << " xuat hien o vi tri " << i << " trong mang" << endl;
+            found++; // đánh dấu tìm thấy
+        }
+    }
+    if (found == 0){
+        cout << "Khong tim thay phan tu " << value << " trong mang!!!" << endl;
+    }
+}
+
+int main(){
+    int n;
+    cout << "Nhap kich thuoc mang: ";
+    cin >> n;
+
+    int a[100]; // giới hạn kích thước mảng tĩnh
+    Nhapmang(n, a);
+    Inmang(n, a);
+
+    int value;
+    cout << "Nhap gia tri can tim trong mang: ";
+    cin >> value;
+    Timkiem(n, a, value);
+
+    return 0;
+}
